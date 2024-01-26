@@ -7,6 +7,8 @@ public class ChangeMaterial : MonoBehaviour
 {
     [Tooltip("The material that's switched to.")]
     public Material otherMaterial = null;
+    public Material Mirror;
+    public Material Clear;
 
     private bool usingOther = false;
     private MeshRenderer meshRenderer = null;
@@ -42,5 +44,13 @@ public class ChangeMaterial : MonoBehaviour
         {
             meshRenderer.material = originalMaterial;
         }
+    }
+
+    public void SetMatClear() {
+        GetComponent<Renderer>().material = Clear;
+    }
+
+    public void SetMatMirror() {
+        GetComponent<Renderer>().material = Mirror;
     }
 }
