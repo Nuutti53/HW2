@@ -1,0 +1,40 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "c9706e2a-7815-4b92-ae85-cf4359e7a3ba",
+            "actions": [
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "dde0382b-a70f-49b5-b96d-4045653a628f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f3cd2253-10f8-4858-ade7-dddaba74bacc",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "CONTROLS",
+            "bindingGroup": "CONTROLS",
+            "devices": []
+        }
+    ]
+}
