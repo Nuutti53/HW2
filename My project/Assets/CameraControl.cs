@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    // Start is called before the first frame update
+      public GameObject Camera;
+    //public Transform CameraMag;
+    //public Transform MagGlass;
+    //public Transform Target;
+
     void Start()
     {
         
@@ -13,6 +17,8 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(Vector3.forward);
+        //var CamToGlass = Camera.transform.position - MagGlass.transform.position;
+        Vector3 Camerarot;
+        Camerarot = Camera.transform.forward;
     }
 }
